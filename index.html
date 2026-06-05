@@ -355,7 +355,8 @@ h1.hh em{color:var(--cyan);font-style:italic}
 .cf-row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
 .cf{display:flex;flex-direction:column;gap:6px}
 .cf label{font-size:9px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:var(--mid)}
-.cf input,.cf select,.cf textarea{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:3px;padding:12px 14px;font-family:var(--g);font-size:14px;font-weight:300;color:var(--ink);outline:none;transition:border-color .2s;-webkit-appearance:none}
+.cf input,.cf select,.cf textarea{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:3px;padding:12px 14px;font-family:var(--g);font-size:14px;font-weight:300;color:#fff;outline:none;transition:border-color .2s;-webkit-appearance:none}
+.cf input::placeholder,.cf textarea::placeholder{color:rgba(255,255,255,.4)}
 .cf input:focus,.cf select:focus,.cf textarea:focus{border-color:var(--cyan)}
 .cf textarea{resize:vertical;min-height:88px}
 .csub{background:var(--ink);color:#fff;font-family:var(--g);font-size:11px;font-weight:700;letter-spacing:1.2px;text-transform:uppercase;padding:14px;border-radius:3px;border:none;cursor:pointer;transition:all .2s;width:100%}
@@ -726,20 +727,20 @@ footer{background:var(--ink);padding:40px 56px;display:grid;grid-template-column
   </div>
   <div class="contact-side">
     <p class="stag" id="ct-tag" data-ca="Sol·licita una demostració" data-es="Solicita una demostración" data-en="Request a demo" data-eu="Demo bat eskatu">Sol·licita una demostració</p>
-    <h2 style="font-family:var(--f);font-size:clamp(30px,3vw,44px);font-weight:600;line-height:.9;letter-spacing:-1.2px;color:var(--ink);margin-bottom:6px" id="ct-h" data-ca="Render 3D gratuït<br><em style='color:var(--cyan);font-style:italic'>en 24 hores.</em>" data-es="Render 3D gratuito<br><em style='color:var(--cyan);font-style:italic'>en 24 horas.</em>" data-en="Free 3D render<br><em style='color:var(--cyan);font-style:italic'>in 24 hours.</em>" data-eu="3D errendaketa doakoa<br><em style='color:var(--cyan);font-style:italic'>24 ordutan.</em>">Render 3D gratuït<br><em style="color:var(--cyan);font-style:italic">en 24 hores.</em></h2>
-    <form class="cform" id="theform" name="octaprint-contact" data-netlify="true" onsubmit="doForm(event)"><input type="hidden" name="form-name" value="octaprint-contact">
+    <h2 style="font-family:var(--f);font-size:clamp(30px,3vw,44px);font-weight:600;line-height:.9;letter-spacing:-1.2px;color:#fff;margin-bottom:6px" id="ct-h" data-ca="Render 3D gratuït<br><em style='color:var(--cyan);font-style:italic'>en 24 hores.</em>" data-es="Render 3D gratuito<br><em style='color:var(--cyan);font-style:italic'>en 24 horas.</em>" data-en="Free 3D render<br><em style='color:var(--cyan);font-style:italic'>in 24 hours.</em>" data-eu="3D errendaketa doakoa<br><em style='color:var(--cyan);font-style:italic'>24 ordutan.</em>">Render 3D gratuït<br><em style="color:var(--cyan);font-style:italic">en 24 hores.</em></h2>
+    <form class="cform" id="theform" onsubmit="doForm(event)"><input type="hidden" name="_subject" value="Nova sol·licitud des de octaprint.cat"><input type="hidden" name="_template" value="table"><input type="hidden" name="_captcha" value="false"><input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
       <div class="cf-row">
-        <div class="cf"><label id="fl-n" data-ca="Nom i cognoms" data-es="Nombre y apellidos" data-en="Full name" data-eu="Izen-abizenak">Nom i cognoms</label><input type="text" id="fn" required placeholder="Joan García"></div>
-        <div class="cf"><label id="fl-t" data-ca="Telèfon" data-es="Teléfono" data-en="Phone" data-eu="Telefonoa">Telèfon</label><input type="tel" id="ft" placeholder="+34 600 000 000"></div>
+        <div class="cf"><label id="fl-n" data-ca="Nom i cognoms" data-es="Nombre y apellidos" data-en="Full name" data-eu="Izen-abizenak">Nom i cognoms</label><input type="text" id="fn" name="Nom" required placeholder="Joan García"></div>
+        <div class="cf"><label id="fl-t" data-ca="Telèfon" data-es="Teléfono" data-en="Phone" data-eu="Telefonoa">Telèfon</label><input type="tel" id="ft" name="Telèfon" placeholder="+34 600 000 000"></div>
       </div>
-      <div class="cf"><label id="fl-e" data-ca="Correu electrònic" data-es="Correo electrónico" data-en="Email" data-eu="Posta elektronikoa">Correu electrònic</label><input type="email" id="fe" required placeholder="joan@empresa.com"></div>
-      <div class="cf"><label id="fl-m" data-ca="Descriu el teu projecte" data-es="Describe tu proyecto" data-en="Describe your project" data-eu="Zure proiektua deskribatu">Descriu el teu projecte</label><textarea id="fm" placeholder="Ex: Restaurant a Barcelona, 20m² paret, vull el nostre logotip..."></textarea></div>
+      <div class="cf"><label id="fl-e" data-ca="Correu electrònic" data-es="Correo electrónico" data-en="Email" data-eu="Posta elektronikoa">Correu electrònic</label><input type="email" id="fe" name="email" required placeholder="joan@empresa.com"></div>
+      <div class="cf"><label id="fl-m" data-ca="Descriu el teu projecte" data-es="Describe tu proyecto" data-en="Describe your project" data-eu="Zure proiektua deskribatu">Descriu el teu projecte</label><textarea id="fm" name="Projecte" placeholder="Ex: Restaurant a Barcelona, 20m² paret, vull el nostre logotip..."></textarea></div>
       <button type="submit" class="csub i" id="csub" data-ca="Enviar · Render 3D en 24h →" data-es="Enviar · Render 3D en 24h →" data-en="Send · 3D render in 24h →" data-eu="Bidali · 3D errendaketa 24h-tan →">Enviar · Render 3D en 24h →</button>
       <p class="cn" id="cn" data-ca="✓ Resposta en 24h · ✓ Sense compromís · ✓ Gratuït" data-es="✓ Respuesta en 24h · ✓ Sin compromiso · ✓ Gratuito" data-en="✓ Response in 24h · ✓ No commitment · ✓ Free" data-eu="✓ Erantzuna 24h-tan · ✓ Betebeharrik gabe · ✓ Doakoa">✓ Resposta en 24h · ✓ Sense compromís · ✓ Gratuït</p>
-      <div class="csuc" id="csuc"><p style="font-size:20px;margin-bottom:8px">🎯</p><p style="font-size:15px;color:var(--ink)" id="csuc-msg" data-ca="Sol·licitud enviada! Et contactem aviat." data-es="¡Solicitud enviada! Te contactamos pronto." data-en="Request sent! We'll be in touch soon." data-eu="Eskaera bidalia! Laster harremanetan jarriko gara.">Sol·licitud enviada! Et contactem aviat.</p></div>
+      <div class="csuc" id="csuc"><p style="font-size:20px;margin-bottom:8px">🎯</p><p style="font-size:15px;color:#fff" id="csuc-msg" data-ca="Sol·licitud enviada! Et contactem aviat." data-es="¡Solicitud enviada! Te contactamos pronto." data-en="Request sent! We'll be in touch soon." data-eu="Eskaera bidalia! Laster harremanetan jarriko gara.">Sol·licitud enviada! Et contactem aviat.</p></div>
     </form>
     <div style="display:flex;gap:16px;margin-top:20px;flex-wrap:wrap">
-      <a href="mailto:hola@octaprint.cat" style="font-size:12px;color:rgba(255,255,255,.7);font-weight:300">hola@octaprint.cat</a>
+      <a href="mailto:info@octaprint.cat" style="font-size:12px;color:rgba(255,255,255,.7);font-weight:300">info@octaprint.cat</a>
       <a href="tel:+34622655514" style="font-size:12px;color:rgba(255,255,255,.7);font-weight:300">+34 622 655 514</a>
     </div>
   </div>
@@ -848,16 +849,26 @@ window.tFq=tFq;
 function doForm(e){
   e.preventDefault();
   var btn=document.getElementById('csub');
+  var orig=btn.textContent;
   btn.style.opacity='.6';btn.textContent='Enviant...';
-  setTimeout(function(){
+  var form=document.getElementById('theform');
+  fetch('https://formsubmit.co/ajax/info@octaprint.cat',{
+    method:'POST',
+    headers:{'Accept':'application/json'},
+    body:new FormData(form)
+  })
+  .then(function(r){return r.json()})
+  .then(function(){
+    form.querySelectorAll('input,textarea,button,.cn').forEach(function(el){el.style.display='none'});
+    document.getElementById('csuc').style.display='block';
+  })
+  .catch(function(){
+    btn.style.opacity='1';btn.textContent=orig;
     var n=document.getElementById('fn').value;
     var msg=document.getElementById('fm').value;
-    var frm=document.getElementById('theform');
-    frm.querySelectorAll('input,textarea,button,.cn').forEach(function(el){el.style.display='none'});
-    document.getElementById('csuc').style.display='block';
     var txt=encodeURIComponent('Hola Octaprint! Soc '+n+'. '+msg);
-    setTimeout(function(){window.open('https://wa.me/34622655514?text='+txt,'_blank')},1800);
-  },600);
+    window.open('https://wa.me/34622655514?text='+txt,'_blank');
+  });
 }
 window.doForm=doForm;
 
