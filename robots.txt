@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://octaprint.cat/sitemap.xml
