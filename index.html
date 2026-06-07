@@ -281,6 +281,9 @@ h1.hh em{color:var(--cyan);font-style:italic}
 .gi:hover img{transform:scale(1.06);filter:brightness(.98)saturate(1.1)}
 .gi-cap{position:absolute;bottom:0;left:0;right:0;padding:14px 18px;background:linear-gradient(to top,rgba(13,27,42,.75),transparent);font-size:9px;letter-spacing:1.5px;text-transform:uppercase;color:rgba(255,255,255,.7);opacity:0;transition:opacity .3s}
 .gi:hover .gi-cap{opacity:1}
+.pioneer-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(212,175,55,.12);border:1px solid rgba(212,175,55,.38);color:#d4af37;font-family:var(--g);font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;padding:6px 16px;border-radius:20px;margin-bottom:20px;opacity:0;animation:up .8s var(--spring) .25s both}
+.surface-chips{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0 8px}
+.surface-chip{background:rgba(0,200,255,.06);border:1px solid rgba(0,200,255,.22);color:var(--cyan);font-family:var(--g);font-size:10px;font-weight:600;letter-spacing:.5px;padding:5px 12px;border-radius:12px}
 .g1{grid-column:1;grid-row:1}.g2{grid-column:2;grid-row:1}.g3{grid-column:3;grid-row:1/3}.g4{grid-column:1;grid-row:2}.g5{grid-column:2;grid-row:2}
 
 /* ── REFS REALS ── */
@@ -511,9 +514,10 @@ footer{background:var(--ink);padding:40px 56px;display:grid;grid-template-column
   <div class="h-img" id="hfb" style="display:none"></div>
   <div class="h-veil"></div>
   <div class="h-body">
+    <div class="pioneer-badge" id="pbadge" data-ca="✦ Primers operadors a Espanya" data-es="✦ Primeros operadores en España" data-en="✦ First operators in Spain" data-eu="✦ Espainiako lehenengo operadoreak">✦ Primers operadors a Espanya</div>
     <p class="h-eyebrow" id="h-eye" data-ca="Made in Germany · Distribuïdors oficials wallPen a Ibèria" data-es="Made in Germany · Distribuidores oficiales wallPen en Iberia" data-en="Made in Germany · Official wallPen distributors in Iberia" data-eu="Made in Germany · wallPen banatzaile ofizialak Iberian">Made in Germany · Distribuïdors oficials wallPen a Ibèria</p>
-    <h1 class="hh" id="hh" data-ca="La paret<br>és <em>el llenç.</em>" data-es="La pared<br>es <em>el lienzo.</em>" data-en="The wall<br>is <em>the canvas.</em>" data-eu="Horma<br>da <em>oihala.</em>">La paret<br>és <em>el llenç.</em></h1>
-    <p class="h-sub" id="hsub" data-ca="Imprimim qualsevol imatge directament sobre qualsevol superfície.<br><strong>El mateix dia. Sense obra. Sense adhesius.</strong>" data-es="Imprimimos cualquier imagen directamente sobre cualquier superficie.<br><strong>El mismo día. Sin obras. Sin adhesivos.</strong>" data-en="We print any image directly on any surface.<br><strong>Same day. No renovation. No adhesives.</strong>" data-eu="Edozein irudi inprimatzen dugu edozein azaleratan.<br><strong>Egun berean. Obra gabe. Itsasgarririk gabe.</strong>">Imprimim qualsevol imatge directament sobre qualsevol superfície.<br><strong>El mateix dia. Sense obra. Sense adhesius.</strong></p>
+    <h1 class="hh" id="hh" data-ca="Qualsevol superfície.<br><em>Qualsevol mida.</em>" data-es="Cualquier superficie.<br><em>Cualquier medida.</em>" data-en="Any surface.<br><em>Any size.</em>" data-eu="Edozein azalera.<br><em>Edozein tamaina.</em>">Qualsevol superfície.<br><em>Qualsevol mida.</em></h1>
+    <p class="h-sub" id="hsub" data-ca="Imprimim sobre guix, maons, fusta, pedra, ceràmica i superfícies corbes — directament, sense adhesius.<br><strong>El mateix dia. Sense obra. Garantia 5 anys.</strong>" data-es="Imprimimos sobre yeso, ladrillo, madera, piedra, cerámica y superficies curvas — directo, sin adhesivos.<br><strong>El mismo día. Sin obras. Garantía 5 años.</strong>" data-en="We print on plaster, brick, wood, stone, ceramic and curved surfaces — direct, no adhesives.<br><strong>Same day. No renovation. 5-year guarantee.</strong>" data-eu="Igeltsuan, adreiluan, egurrean, harrian, zeramikan eta azalera kurbatuen gainean inprimatzen dugu — zuzenean.<br><strong>Egun berean. Obra gabe. 5 urteko bermea.</strong>">Imprimim sobre guix, maons, fusta, pedra, ceràmica i superfícies corbes — directament, sense adhesius.<br><strong>El mateix dia. Sense obra. Garantia 5 anys.</strong></p>
     <div class="h-btns">
       <a href="#bcn-contact" class="bf i" id="hb1" data-ca="Sol·licitar render 3D gratuït" data-es="Solicitar render 3D gratuito" data-en="Request free 3D render" data-eu="3D errendaketa doakoa eskatu">Sol·licitar render 3D gratuït</a>
       <a href="#galeria" class="bg i" id="hb2" data-ca="Veure projectes" data-es="Ver proyectos" data-en="See projects" data-eu="Proiektuak ikusi">Veure projectes</a>
@@ -530,8 +534,8 @@ footer{background:var(--ink);padding:40px 56px;display:grid;grid-template-column
 <!-- MARQUEE -->
 <div class="mq">
   <div class="mq-t">
-    <div class="mq-i"><span>Kinderklinik Bethel</span><span class="mq-d">·</span><span>Zoo de Dresden</span><span class="mq-d">·</span><span>Hotel fünf10</span><span class="mq-d">·</span><span>Sparkasse</span><span class="mq-d">·</span><span>Made in Germany</span><span class="mq-d">·</span><span>600 DPI</span><span class="mq-d">·</span><span>45+ països</span><span class="mq-d">·</span><span>wallPen E2</span><span class="mq-d">·</span></div>
-    <div class="mq-i" aria-hidden="true"><span>Kinderklinik Bethel</span><span class="mq-d">·</span><span>Zoo de Dresden</span><span class="mq-d">·</span><span>Hotel fünf10</span><span class="mq-d">·</span><span>Sparkasse</span><span class="mq-d">·</span><span>Made in Germany</span><span class="mq-d">·</span><span>600 DPI</span><span class="mq-d">·</span><span>45+ països</span><span class="mq-d">·</span><span>wallPen E2</span><span class="mq-d">·</span></div>
+    <div class="mq-i"><span>✦ Primers a Espanya</span><span class="mq-d">·</span><span>Kinderklinik Bethel</span><span class="mq-d">·</span><span>Zoo de Dresden</span><span class="mq-d">·</span><span>Hotel fünf10</span><span class="mq-d">·</span><span>Sparkasse</span><span class="mq-d">·</span><span>Made in Germany</span><span class="mq-d">·</span><span>600 DPI</span><span class="mq-d">·</span><span>Guix · Maons · Fusta · Pedra · Corbes</span><span class="mq-d">·</span><span>45+ països</span><span class="mq-d">·</span><span>wallPen E2</span><span class="mq-d">·</span></div>
+    <div class="mq-i" aria-hidden="true"><span>✦ Primers a Espanya</span><span class="mq-d">·</span><span>Kinderklinik Bethel</span><span class="mq-d">·</span><span>Zoo de Dresden</span><span class="mq-d">·</span><span>Hotel fünf10</span><span class="mq-d">·</span><span>Sparkasse</span><span class="mq-d">·</span><span>Made in Germany</span><span class="mq-d">·</span><span>600 DPI</span><span class="mq-d">·</span><span>Guix · Maons · Fusta · Pedra · Corbes</span><span class="mq-d">·</span><span>45+ països</span><span class="mq-d">·</span><span>wallPen E2</span><span class="mq-d">·</span></div>
   </div>
 </div>
 
@@ -568,6 +572,16 @@ footer{background:var(--ink);padding:40px 56px;display:grid;grid-template-column
   <div class="gal-head rv">
     <p class="stag" id="g-tag" data-ca="Projectes internacionals" data-es="Proyectos internacionales" data-en="International projects" data-eu="Nazioarteko proiektuak">Projectes internacionals</p>
     <h2 class="sh" id="g-h" data-ca="Qualsevol superfície.<br><em>Qualsevol motiu.</em>" data-es="Cualquier superficie.<br><em>Cualquier motivo.</em>" data-en="Any surface.<br><em>Any subject.</em>" data-eu="Edozein azalera.<br><em>Edozein motibo.</em>">Qualsevol superfície.<br><em>Qualsevol motiu.</em></h2>
+    <div class="surface-chips">
+      <span class="surface-chip">Guix</span>
+      <span class="surface-chip">Maons</span>
+      <span class="surface-chip">Fusta</span>
+      <span class="surface-chip">Pedra</span>
+      <span class="surface-chip">Ceràmica</span>
+      <span class="surface-chip">Clínker</span>
+      <span class="surface-chip">Metall</span>
+      <span class="surface-chip">Superfícies corbes</span>
+    </div>
   </div>
   <div class="gal-grid">
     <div class="gi g1"><img src="https://www.wallpen.com/assets/images/z/We%20look%20deeper-8vrhzhgvf4azp91.jpg" alt="Impressió mural corporativa 600 DPI paret blanca" loading="lazy"><div class="gi-cap">Corporatiu · Paret blanca</div></div>
