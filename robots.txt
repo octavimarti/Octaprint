@@ -1,4 +1,55 @@
+# robots.txt — octaprint.cat
+# Permet rastreig complet a cercadors clàssics I a motors d'IA generativa
+
+# --- Cercadors tradicionals ---
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# --- Motors d'IA: cerca i citació (IMPORTANT per a GEO) ---
+# OpenAI — ChatGPT Search (citacions en temps real)
+User-agent: OAI-SearchBot
+Allow: /
+
+# OpenAI — GPTBot (entrenament + ChatGPT)
+User-agent: GPTBot
+Allow: /
+
+# OpenAI — plugins/navegació
+User-agent: ChatGPT-User
+Allow: /
+
+# Anthropic — Claude
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+# Perplexity
+User-agent: PerplexityBot
+Allow: /
+
+# Google — model Gemini (Google-Extended controla l'ús per IA)
+User-agent: Google-Extended
+Allow: /
+
+# Apple Intelligence
+User-agent: Applebot-Extended
+Allow: /
+
+# Common Crawl (font d'entrenament de molts models)
+User-agent: CCBot
+Allow: /
+
+# --- Regla general per a la resta ---
 User-agent: *
 Allow: /
 
+# Sitemap
 Sitemap: https://octaprint.cat/sitemap.xml
