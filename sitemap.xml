@@ -1,9 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://octaprint.cat/</loc>
-    <lastmod>2026-06-05</lastmod>
+    <lastmod>2026-06-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://octaprint.cat/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://octaprint.cat/es/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://octaprint.cat/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://octaprint.cat/"/>
+  </url>
+  <url>
+    <loc>https://octaprint.cat/es/</loc>
+    <lastmod>2026-06-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://octaprint.cat/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://octaprint.cat/es/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://octaprint.cat/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://octaprint.cat/"/>
+  </url>
+  <url>
+    <loc>https://octaprint.cat/en/</loc>
+    <lastmod>2026-06-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://octaprint.cat/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://octaprint.cat/es/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://octaprint.cat/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://octaprint.cat/"/>
   </url>
 </urlset>
