@@ -464,7 +464,6 @@ footer{background:var(--ink);padding:40px 56px;display:grid;grid-template-column
     <button class="flag-btn on i" onclick="location.href='/'"><svg viewBox="0 0 18 12"><rect width="18" height="12" fill="#FCCA44"/><rect y="1.5" width="18" height="2.25" fill="#CC0000"/><rect y="4.5" width="18" height="2.25" fill="#CC0000"/><rect y="7.5" width="18" height="2.25" fill="#CC0000"/><rect y="10.5" width="18" height="1.5" fill="#CC0000"/></svg> CA</button>
     <button class="flag-btn i" onclick="location.href='/es/'"><svg viewBox="0 0 18 12" width="18" height="12" aria-hidden="true"><rect width="18" height="12" fill="#c60b1e"/><rect y="3" width="18" height="6" fill="#ffc400"/></svg> ES</button>
     <button class="flag-btn i" onclick="location.href='/en/'"><svg viewBox="0 0 18 12" width="18" height="12" aria-hidden="true"><rect width="18" height="12" fill="#012169"/><path d="M0,0 L18,12 M18,0 L0,12" stroke="white" stroke-width="2.5"/><path d="M0,0 L18,12 M18,0 L0,12" stroke="#C8102E" stroke-width="1.4"/><rect x="7" y="0" width="4" height="12" fill="white"/><rect x="0" y="4" width="18" height="4" fill="white"/><rect x="7.8" y="0" width="2.4" height="12" fill="#C8102E"/><rect x="0" y="4.8" width="18" height="2.4" fill="#C8102E"/></svg> EN</button>
-    <button class="flag-btn i" onclick="setL('eu');cm()"><svg viewBox="0 0 18 12"><rect width="18" height="12" fill="#CC0000"/><rect x="7" y="0" width="4" height="12" fill="#007A33"/><rect y="4" width="18" height="4" fill="#007A33"/><line x1="0" y1="0" x2="18" y2="12" stroke="white" stroke-width="2.2"/><line x1="18" y1="0" x2="0" y2="12" stroke="white" stroke-width="2.2"/></svg> EU</button>
   </div>
 </div>
 
@@ -506,10 +505,6 @@ footer{background:var(--ink);padding:40px 56px;display:grid;grid-template-column
       </button>
       <button class="flag-btn i" onclick="location.href='/en/'" aria-label="English">
         <svg viewBox="0 0 18 12" width="18" height="12" aria-hidden="true"><rect width="18" height="12" fill="#012169"/><path d="M0,0 L18,12 M18,0 L0,12" stroke="white" stroke-width="2.5"/><path d="M0,0 L18,12 M18,0 L0,12" stroke="#C8102E" stroke-width="1.4"/><rect x="7" y="0" width="4" height="12" fill="white"/><rect x="0" y="4" width="18" height="4" fill="white"/><rect x="7.8" y="0" width="2.4" height="12" fill="#C8102E"/><rect x="0" y="4.8" width="18" height="2.4" fill="#C8102E"/></svg>EN
-      </button>
-      <button class="flag-btn i" onclick="setL('eu')" aria-label="Euskera">
-        <svg viewBox="0 0 18 12" width="18" height="12"><rect width="18" height="12" fill="#CC0000"/><rect x="7" y="0" width="4" height="12" fill="#007A33"/><rect y="4" width="18" height="4" fill="#007A33"/><line x1="0" y1="0" x2="18" y2="12" stroke="white" stroke-width="2"/><line x1="18" y1="0" x2="0" y2="12" stroke="white" stroke-width="2"/></svg>
-        EU
       </button>
     </div>
     <a href="#bcn-contact" class="ncta i" id="ncta" data-ca="Sol·licitar demostració" data-es="Solicitar demostración" data-en="Request demo" data-eu="Demo eskatu">Sol·licitar demostració</a>
@@ -941,22 +936,7 @@ function doForm(e){
 }
 window.doForm=doForm;
 
-// LANGUAGE
-function setL(lang){
-  document.querySelectorAll('.flag-btn').forEach(function(b){b.classList.remove('on')});
-  document.querySelectorAll('.flag-btn').forEach(function(b){
-    if(b.getAttribute('onclick')&&b.getAttribute('onclick').includes("'"+lang+"'")){b.classList.add('on')}
-  });
-  document.querySelectorAll('[data-'+lang+']').forEach(function(el){
-    var v=el.getAttribute('data-'+lang);
-    if(el.tagName==='INPUT'||el.tagName==='TEXTAREA')el.placeholder=v;
-    else el.innerHTML=v;
-  });
-  document.documentElement.lang=lang;
-  try{localStorage.setItem('op-lang',lang)}catch(x){}
-}
-window.setL=setL;
-try{var s=localStorage.getItem('op-lang');if(s&&s!=='ca')setTimeout(function(){setL(s)},150)}catch(x){}
+// LANGUAGE: gestionat 100% per URL real (ca/es/en) — sense JS
 
 })();
 </script>
