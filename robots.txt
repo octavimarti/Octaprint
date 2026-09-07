@@ -1,5 +1,6 @@
 # robots.txt — octaprint.cat
-# Permet rastreig complet a cercadors clàssics I a motors d'IA generativa
+# Permet rastreig complet a cercadors clàssics i a motors d'IA generativa
+# Revisat: 7 de setembre de 2026 — revisar cada 6 mesos, els bots d'IA canvien de nom sovint
 
 # --- Cercadors tradicionals ---
 User-agent: Googlebot
@@ -21,7 +22,7 @@ Allow: /
 User-agent: ChatGPT-User
 Allow: /
 
-# Anthropic — Claude
+# Anthropic — Claude (entrenament)
 User-agent: ClaudeBot
 Allow: /
 
@@ -31,8 +32,19 @@ Allow: /
 User-agent: Claude-Web
 Allow: /
 
-# Perplexity
+# Anthropic — Claude (cerca i citació en temps real) [NOU]
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+# Perplexity (indexació)
 User-agent: PerplexityBot
+Allow: /
+
+# Perplexity (recuperació en viu per a l'usuari) [NOU]
+User-agent: Perplexity-User
 Allow: /
 
 # Google — model Gemini (Google-Extended controla l'ús per IA)
@@ -43,9 +55,24 @@ Allow: /
 User-agent: Applebot-Extended
 Allow: /
 
+User-agent: Applebot
+Allow: /
+
+# Meta AI (Llama / Meta AI) [NOU]
+User-agent: Meta-ExternalAgent
+Allow: /
+
+# Amazon (Alexa+ / Rufus) [NOU]
+User-agent: Amazonbot
+Allow: /
+
 # Common Crawl (font d'entrenament de molts models)
 User-agent: CCBot
 Allow: /
+
+# Bot amb historial documentat d'ignorar robots.txt: es bloqueja [NOU]
+User-agent: Bytespider
+Disallow: /
 
 # --- Regla general per a la resta ---
 User-agent: *
