@@ -29,30 +29,30 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://octaprint.cat/"/>
   </url>
   <url>
-    <loc>https://octaprint.cat/legal/</loc>
+    <loc>https://octaprint.cat/legal.html</loc>
     <lastmod>2026-10-13</lastmod>
     <priority>0.3</priority>
-    <xhtml:link rel="alternate" hreflang="ca" href="https://octaprint.cat/legal/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://octaprint.cat/es/legal/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://octaprint.cat/en/legal/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://octaprint.cat/legal/"/>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://octaprint.cat/legal.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://octaprint.cat/legal-es.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://octaprint.cat/legal-en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://octaprint.cat/legal.html"/>
   </url>
   <url>
-    <loc>https://octaprint.cat/es/legal/</loc>
+    <loc>https://octaprint.cat/legal-es.html</loc>
     <lastmod>2026-10-13</lastmod>
     <priority>0.3</priority>
-    <xhtml:link rel="alternate" hreflang="ca" href="https://octaprint.cat/legal/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://octaprint.cat/es/legal/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://octaprint.cat/en/legal/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://octaprint.cat/legal/"/>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://octaprint.cat/legal.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://octaprint.cat/legal-es.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://octaprint.cat/legal-en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://octaprint.cat/legal.html"/>
   </url>
   <url>
-    <loc>https://octaprint.cat/en/legal/</loc>
+    <loc>https://octaprint.cat/legal-en.html</loc>
     <lastmod>2026-10-13</lastmod>
     <priority>0.3</priority>
-    <xhtml:link rel="alternate" hreflang="ca" href="https://octaprint.cat/legal/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://octaprint.cat/es/legal/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://octaprint.cat/en/legal/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://octaprint.cat/legal/"/>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://octaprint.cat/legal.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://octaprint.cat/legal-es.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://octaprint.cat/legal-en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://octaprint.cat/legal.html"/>
   </url>
 </urlset>

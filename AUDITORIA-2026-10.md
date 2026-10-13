@@ -1,9 +1,9 @@
 # Auditoria web octaprint.cat — 13/10/2026
 
 ## Canvis aplicats en aquesta versió
-- **Legal (LSSI art. 10 / RGPD / cookies):** noves pàgines `/legal/`, `/es/legal/`, `/en/legal/` (avís legal, privacitat, cookies); identificació de la societat i enllaços legals al peu; informació bàsica RGPD i casella de consentiment obligatòria al formulari.
+- **Legal (LSSI art. 10 / RGPD / cookies):** noves pàgines `/legal.html`, `/legal-es.html`, `/legal-en.html` (avís legal, privacitat, cookies); identificació de la societat i enllaços legals al peu; informació bàsica RGPD i casella de consentiment obligatòria al formulari.
 - **Zero cookies de tercers:** tipografies allotjades al propi web (adeu Google Fonts); vídeos amb `youtube-nocookie.com`. Sense analítica → no cal bàner de cookies.
-- **Seguretat:** Content-Security-Policy (meta), Referrer-Policy, tot el JavaScript a `/assets/js/main.js` (cap gestor `onclick` inline), `noopener noreferrer`, `/.well-known/security.txt`, `.nojekyll`.
+- **Seguretat:** Content-Security-Policy (meta), Referrer-Policy, tot el JavaScript a `/main.js` (cap gestor `onclick` inline), `noopener noreferrer`, `/security.txt`.
 - **Formulari:** ja no mostra "enviat" si FormSubmit falla; missatge d'error i enllaç a WhatsApp en lloc d'obrir finestres automàticament.
 - **SEO:** canonical i `og:url` correctes per idioma, `og:image` pròpia, `legalName` + `taxID` al JSON-LD, sitemap actualitzat amb pàgines legals, pàgina 404, favicon.
 - **Eliminat:** bloc de text ocult "AI-readable" (text amagat = risc de penalització de Google) i 270 atributs d'idioma obsolets (-26 % de pes HTML).
