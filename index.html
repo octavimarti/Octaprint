@@ -51,12 +51,29 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebSite",
+      "@id": "https://octaprint.cat/#website",
+      "name": "Octaprint",
+      "alternateName": [
+        "Octaprint Barcelona"
+      ],
+      "url": "https://octaprint.cat/",
+      "inLanguage": "ca",
+      "publisher": {
+        "@id": "https://octaprint.cat/#business"
+      }
+    },
+    {
       "@type": "LocalBusiness",
       "@id": "https://octaprint.cat/#business",
       "name": "Octaprint",
       "legalName": "Octaprint Barcelona, SL",
       "taxID": "B93843498",
-      "alternateName": ["Octaprint", "Octaprint Barcelona", "Octaprint Impressió Mural"],
+      "alternateName": [
+        "Octaprint",
+        "Octaprint Barcelona",
+        "Octaprint Impressió Mural"
+      ],
       "description": "Servei d'impressió mural directa a Barcelona i Catalunya. Partner oficial de wallPen GmbH (tecnologia wallPen E2, Made in Germany). Imprimim qualsevol imatge directament sobre la paret, sense obra i sense adhesius.",
       "url": "https://octaprint.cat",
       "telephone": "+34622655514",
@@ -71,19 +88,32 @@
         "addressCountry": "ES"
       },
       "areaServed": [
-        {"@type": "Country", "name": "España"},
-        {"@type": "Country", "name": "Andorra"}
+        {
+          "@type": "Country",
+          "name": "España"
+        },
+        {
+          "@type": "Country",
+          "name": "Andorra"
+        }
       ],
       "serviceArea": {
         "@type": "GeoCircle",
-        "geoMidpoint": {"@type": "GeoCoordinates", "latitude": 41.3851, "longitude": 2.1734},
+        "geoMidpoint": {
+          "@type": "GeoCoordinates",
+          "latitude": 41.3851,
+          "longitude": 2.1734
+        },
         "geoRadius": "500000"
       },
       "sameAs": [
         "https://www.instagram.com/octaprint.cat",
-        "https://www.wallpen.com"
+        "https://www.linkedin.com/company/octaprint"
       ],
-      "logo": {"@type": "ImageObject", "url": "https://octaprint.cat/og-image.jpg"},
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://octaprint.cat/og-image.jpg"
+      },
       "image": "https://octaprint.cat/og-image.jpg",
       "priceRange": "€€",
       "currenciesAccepted": "EUR",
@@ -93,10 +123,42 @@
         "@type": "OfferCatalog",
         "name": "Serveis d'impressió mural directa",
         "itemListElement": [
-          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Pack Restaurant", "description": "Impressió mural directa per a restaurants i bars. 20m². Render 3D gratuït. Execució in situ.", "priceCurrency": "EUR"}},
-          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Pack Retail", "description": "Impressió mural directa per a comerços i botigues. 30m².", "priceCurrency": "EUR"}},
-          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Pack Oficina", "description": "Impressió mural directa per a oficines i espais corporatius. 40m².", "priceCurrency": "EUR"}},
-          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Pack Hotel", "description": "Impressió mural directa per a hotels. 50m². Tintes UV veganes.", "priceCurrency": "EUR"}}
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Pack Restaurant",
+              "description": "Impressió mural directa per a restaurants i bars. 20m². Render 3D gratuït. Execució in situ.",
+              "priceCurrency": "EUR"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Pack Retail",
+              "description": "Impressió mural directa per a comerços i botigues. 30m².",
+              "priceCurrency": "EUR"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Pack Oficina",
+              "description": "Impressió mural directa per a oficines i espais corporatius. 40m².",
+              "priceCurrency": "EUR"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Pack Hotel",
+              "description": "Impressió mural directa per a hotels. 50m². Tintes UV veganes.",
+              "priceCurrency": "EUR"
+            }
+          }
         ]
       }
     },
@@ -104,22 +166,65 @@
       "@type": "Service",
       "@id": "https://octaprint.cat/#service",
       "name": "Impressió Mural Directa a la Paret",
-      "provider": {"@id": "https://octaprint.cat/#business"},
+      "provider": {
+        "@id": "https://octaprint.cat/#business"
+      },
       "serviceType": "Wall printing service",
-      "description": "Servei d'impressió mural directa d'alta resolució (1200 DPI) sobre qualsevol superfície (paret, fusta, vidre, pedra, metall). Sense obra. Sense adhesius. Tintes UV veganes. Garantia escrita de 5 anys en interior.",
-      "areaServed": "España, Andorra",
-      "offers": {"@type": "Offer"}
+      "description": "Servei d'impressió mural directa d'alta resolució (fins a 1200 DPI) sobre qualsevol superfície (paret, fusta, vidre, pedra, metall). Sense obra. Sense adhesius. Tintes UV veganes. Garantia escrita de 5 anys en interior.",
+      "areaServed": "España, Andorra"
     },
     {
       "@type": "FAQPage",
       "@id": "https://octaprint.cat/#faq",
       "mainEntity": [
-        {"@type": "Question", "name": "Quant de temps triga una impressió mural directa?", "acceptedAnswer": {"@type": "Answer", "text": "Depèn dels metres quadrats, la resolució i el tipus de superfície. Com a referència, la màquina imprimeix aproximadament 1 m² per hora i el muntatge requereix al voltant d'una hora: un mural de 20 m² sol necessitar 2–3 jornades. Et donem el termini exacte al pressupost i, si cal, treballem per zones o fora de l'horari del teu negoci."}},
-        {"@type": "Question", "name": "Sobre quines superfícies funciona la impressió mural?", "acceptedAnswer": {"@type": "Answer", "text": "Pràcticament totes: guix, pintura plàstica, fusta, pedra, maó, clínker, metall, vidre, ceràmica i rajoles, també arrebossats rugosos. Els sensors de la màquina adapten el capçal a les irregularitats de la paret. Abans de cada projecte en fem una prova sobre la superfície."}},
-        {"@type": "Question", "name": "Fins a quina alçada podeu imprimir en una paret?", "acceptedAnswer": {"@type": "Answer", "text": "Alçada mínima de la paret: 1,7 m. Alçada màxima d'impressió: 4 metres (amb l'extensió d'eix vertical). L'amplada no té límit. Marges tècnics: 6 cm a l'esquerra, 10 cm a la dreta i 25 cm a dalt i a baix."}},
-        {"@type": "Question", "name": "Quant dura la impressió mural i es pot esborrar?", "acceptedAnswer": {"@type": "Answer", "text": "Les tintes UV són resistents a la llum, la humitat i el fregament, i els treballs en interior tenen garantia escrita de 5 anys. Per eliminar-la: en vidre, amb una rasqueta; en altres superfícies, amb 2–3 capes de pintura."}},
-        {"@type": "Question", "name": "Quina garantia oferiu per a la impressió mural?", "acceptedAnswer": {"@type": "Answer", "text": "Tots els treballs en interior inclouen una garantia escrita de 5 anys, amb les condicions detallades al pressupost. Si la impressió es deteriora prematurament en condicions normals d'ús, ho resolem sense cost addicional."}},
-        {"@type": "Question", "name": "Veniu a imprimir a qualsevol lloc d'Espanya?", "acceptedAnswer": {"@type": "Answer", "text": "Treballem principalment a Barcelona i Catalunya, i també fem projectes a la resta d'Espanya i a Andorra. El desplaçament és gratuït fins a 30 km de Barcelona; per a distàncies superiors, l'import consta al pressupost. Sense costos ocults."}}
+        {
+          "@type": "Question",
+          "name": "Quant de temps triga una impressió mural directa?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Depèn dels metres quadrats, la resolució i el tipus de superfície. Com a referència, la màquina imprimeix aproximadament 1 m² per hora i el muntatge requereix al voltant d'una hora: un mural de 20 m² sol necessitar 2–3 jornades. Et donem el termini exacte al pressupost i, si cal, treballem per zones o fora de l'horari del teu negoci."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Sobre quines superfícies funciona la impressió mural?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Pràcticament totes: guix, pintura plàstica, fusta, pedra, maó, clínker, metall, vidre, ceràmica i rajoles, també arrebossats rugosos. Els sensors de la màquina adapten el capçal a les irregularitats de la paret. Abans de cada projecte en fem una prova sobre la superfície."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Fins a quina alçada podeu imprimir en una paret?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Alçada mínima de la paret: 1,7 m. Alçada màxima d'impressió: 4 metres (amb l'extensió d'eix vertical). L'amplada no té límit. Marges tècnics: 6 cm a l'esquerra, 10 cm a la dreta i 25 cm a dalt i a baix."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Quant dura la impressió mural i es pot esborrar?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Les tintes UV són resistents a la llum, la humitat i el fregament, i els treballs en interior tenen garantia escrita de 5 anys. Per eliminar-la: en vidre, amb una rasqueta; en altres superfícies, amb 2–3 capes de pintura."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Quina garantia oferiu per a la impressió mural?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Tots els treballs en interior inclouen una garantia escrita de 5 anys, amb les condicions detallades al pressupost. Si la impressió es deteriora prematurament en condicions normals d'ús, ho resolem sense cost addicional."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Veniu a imprimir a qualsevol lloc d'Espanya?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Treballem principalment a Barcelona i Catalunya, i també fem projectes a la resta d'Espanya i a Andorra. El desplaçament és gratuït fins a 30 km de Barcelona; per a distàncies superiors, l'import consta al pressupost. Sense costos ocults."
+          }
+        }
       ]
     },
     {
@@ -131,8 +236,22 @@
       "url": "https://octaprint.cat",
       "logo": "https://octaprint.cat/og-image.jpg",
       "description": "Octaprint és operador de servei d'impressió mural directa i partner oficial de wallPen GmbH (tecnologia wallPen E2, Made in Germany).",
-      "knowsAbout": ["Impressió mural directa", "wallPen E2", "Decoració commercial", "Impressió digital gran format", "Tintes UV veganes"],
-      "founder": {"@type": "Person", "name": "Octavi Martí Busquet", "jobTitle": "Fundador i Director d'Octaprint SLU"}
+      "knowsAbout": [
+        "Impressió mural directa",
+        "wallPen E2",
+        "Decoració commercial",
+        "Impressió digital gran format",
+        "Tintes UV veganes"
+      ],
+      "founder": {
+        "@type": "Person",
+        "name": "Octavi Martí Busquet",
+        "jobTitle": "Fundador i Director d'Octaprint SLU"
+      },
+      "sameAs": [
+        "https://www.instagram.com/octaprint.cat",
+        "https://www.linkedin.com/company/octaprint"
+      ]
     }
   ]
 }
@@ -617,7 +736,7 @@ h1.hh{font-size:clamp(46px,7.4vw,104px)}
     <div class="pioneer-badge" id="pbadge">✦ Partner oficial wallPen</div>
     <p class="h-eyebrow" id="h-eye">Made in Germany · Partner oficial wallPen</p>
     <h1 class="hh" id="hh">Impressió de murals<br><em>a la paret a Barcelona.</em></h1>
-    <p class="h-sub" id="hsub">Imprimim el teu disseny directament sobre guix, maó, fusta, pedra, ceràmica i superfícies corbes, sense vinils ni adhesius.<br><strong>Sense obra. Sense tancar el local. Garantia escrita de 5 anys.</strong></p>
+    <p class="h-sub" id="hsub">A Octaprint imprimim el teu disseny directament sobre guix, maó, fusta, pedra, ceràmica i superfícies corbes, sense vinils ni adhesius.<br><strong>Sense obra. Sense tancar el local. Garantia escrita de 5 anys.</strong></p>
     <div class="h-btns">
       <a href="https://wa.me/34622655514?text=Hola%20Octaprint%21%20Vull%20un%20render%20gratu%C3%AFt%20per%20a%20la%20meva%20paret.%20Us%20envio%20una%20foto." class="wa-btn i" target="_blank" rel="noopener noreferrer" id="hb1"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>Envia una foto per WhatsApp</a>
       <a href="#galeria" class="bg i" id="hb2">Veure exemples</a>
