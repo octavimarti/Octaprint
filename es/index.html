@@ -51,12 +51,29 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebSite",
+      "@id": "https://octaprint.cat/#website",
+      "name": "Octaprint",
+      "alternateName": [
+        "Octaprint Barcelona"
+      ],
+      "url": "https://octaprint.cat/",
+      "inLanguage": "es",
+      "publisher": {
+        "@id": "https://octaprint.cat/#business"
+      }
+    },
+    {
       "@type": "LocalBusiness",
       "@id": "https://octaprint.cat/#business",
       "name": "Octaprint",
       "legalName": "Octaprint Barcelona, SL",
       "taxID": "B93843498",
-      "alternateName": ["Octaprint", "Octaprint Barcelona", "Octaprint Impresión Mural"],
+      "alternateName": [
+        "Octaprint",
+        "Octaprint Barcelona",
+        "Octaprint Impresión Mural"
+      ],
       "description": "Servicio de impresión mural directa en Barcelona y Cataluña. Partner oficial de wallPen GmbH (tecnología wallPen E2, Made in Germany). Imprimimos cualquier imagen directamente sobre la pared, sin obras y sin adhesivos.",
       "url": "https://octaprint.cat",
       "telephone": "+34622655514",
@@ -71,19 +88,32 @@
         "addressCountry": "ES"
       },
       "areaServed": [
-        {"@type": "Country", "name": "España"},
-        {"@type": "Country", "name": "Andorra"}
+        {
+          "@type": "Country",
+          "name": "España"
+        },
+        {
+          "@type": "Country",
+          "name": "Andorra"
+        }
       ],
       "serviceArea": {
         "@type": "GeoCircle",
-        "geoMidpoint": {"@type": "GeoCoordinates", "latitude": 41.3851, "longitude": 2.1734},
+        "geoMidpoint": {
+          "@type": "GeoCoordinates",
+          "latitude": 41.3851,
+          "longitude": 2.1734
+        },
         "geoRadius": "500000"
       },
       "sameAs": [
         "https://www.instagram.com/octaprint.cat",
-        "https://www.wallpen.com"
+        "https://www.linkedin.com/company/octaprint"
       ],
-      "logo": {"@type": "ImageObject", "url": "https://octaprint.cat/og-image.jpg"},
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://octaprint.cat/og-image.jpg"
+      },
       "image": "https://octaprint.cat/og-image.jpg",
       "priceRange": "€€",
       "currenciesAccepted": "EUR",
@@ -93,10 +123,42 @@
         "@type": "OfferCatalog",
         "name": "Servicios de impresión mural directa",
         "itemListElement": [
-          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Pack Restaurant", "description": "Impresión mural directa para restaurantes y bares. 20m². Render 3D gratuito. Ejecución in situ.", "priceCurrency": "EUR"}},
-          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Pack Retail", "description": "Impresión mural directa para comercios y tiendas. 30m².", "priceCurrency": "EUR"}},
-          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Pack Oficina", "description": "Impresión mural directa para oficinas y espacios corporativos. 40m².", "priceCurrency": "EUR"}},
-          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Pack Hotel", "description": "Impresión mural directa para hoteles. 50m². Tintas UV veganas.", "priceCurrency": "EUR"}}
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Pack Restaurant",
+              "description": "Impresión mural directa para restaurantes y bares. 20m². Render 3D gratuito. Ejecución in situ.",
+              "priceCurrency": "EUR"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Pack Retail",
+              "description": "Impresión mural directa para comercios y tiendas. 30m².",
+              "priceCurrency": "EUR"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Pack Oficina",
+              "description": "Impresión mural directa para oficinas y espacios corporativos. 40m².",
+              "priceCurrency": "EUR"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Pack Hotel",
+              "description": "Impresión mural directa para hoteles. 50m². Tintas UV veganas.",
+              "priceCurrency": "EUR"
+            }
+          }
         ]
       }
     },
@@ -104,22 +166,65 @@
       "@type": "Service",
       "@id": "https://octaprint.cat/#service",
       "name": "Impresión Mural Directa en Pared",
-      "provider": {"@id": "https://octaprint.cat/#business"},
+      "provider": {
+        "@id": "https://octaprint.cat/#business"
+      },
       "serviceType": "Wall printing service",
-      "description": "Servicio de impresión mural directa de alta resolución (1200 DPI) sobre cualquier superficie (pared, madera, vidrio, piedra, metal). Sin obras. Sin adhesivos. Tintas UV veganas. Garantía escrita de 5 años en interior.",
-      "areaServed": "España, Andorra",
-      "offers": {"@type": "Offer"}
+      "description": "Servicio de impresión mural directa de alta resolución (hasta 1200 DPI) sobre cualquier superficie (pared, madera, vidrio, piedra, metal). Sin obras. Sin adhesivos. Tintas UV veganas. Garantía escrita de 5 años en interior.",
+      "areaServed": "España, Andorra"
     },
     {
       "@type": "FAQPage",
       "@id": "https://octaprint.cat/#faq",
       "mainEntity": [
-        {"@type": "Question", "name": "¿Cuánto tiempo tarda una impresión mural directa?", "acceptedAnswer": {"@type": "Answer", "text": "Depende de los metros cuadrados, la resolución y el tipo de superficie. Como referencia, la máquina imprime aproximadamente 1 m² por hora y el montaje requiere alrededor de una hora: un mural de 20 m² suele necesitar 2–3 jornadas. Te damos el plazo exacto en el presupuesto y, si hace falta, trabajamos por zonas o fuera del horario de tu negocio."}},
-        {"@type": "Question", "name": "¿Sobre qué superficies funciona la impresión mural?", "acceptedAnswer": {"@type": "Answer", "text": "Prácticamente todas: yeso, pintura plástica, madera, piedra, ladrillo, clínker, metal, vidrio, cerámica y azulejos, también enfoscados rugosos. Los sensores de la máquina adaptan el cabezal a las irregularidades de la pared. Antes de cada proyecto hacemos una prueba sobre la superficie."}},
-        {"@type": "Question", "name": "Fins a quina alçada podeu imprimir en una paret?", "acceptedAnswer": {"@type": "Answer", "text": "Altura mínima de la pared: 1,7 m. Altura máxima de impresión: 4 metros (con la extensión de eje vertical). La anchura no tiene límite. Márgenes técnicos: 6 cm a la izquierda, 10 cm a la derecha y 25 cm arriba y abajo."}},
-        {"@type": "Question", "name": "¿Cuánto dura la impresión mural y se puede borrar?", "acceptedAnswer": {"@type": "Answer", "text": "Las tintas UV son resistentes a la luz, la humedad y el roce, y los trabajos en interior tienen garantía escrita de 5 años. Para eliminarla: en vidrio, con una rasqueta; en otras superficies, con 2–3 capas de pintura."}},
-        {"@type": "Question", "name": "¿Qué garantía ofrecéis para la impresión mural?", "acceptedAnswer": {"@type": "Answer", "text": "Todos los trabajos en interior incluyen una garantía escrita de 5 años, con las condiciones detalladas en el presupuesto. Si la impresión se deteriora prematuramente en condiciones normales de uso, lo resolvemos sin coste adicional."}},
-        {"@type": "Question", "name": "¿Vais a imprimir a cualquier lugar de España?", "acceptedAnswer": {"@type": "Answer", "text": "Trabajamos principalmente en Barcelona y Cataluña, y también hacemos proyectos en el resto de España y en Andorra. El desplazamiento es gratuito hasta 30 km de Barcelona; para distancias mayores, el importe consta en el presupuesto. Sin costes ocultos."}}
+        {
+          "@type": "Question",
+          "name": "¿Cuánto tiempo tarda una impresión mural directa?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Depende de los metros cuadrados, la resolución y el tipo de superficie. Como referencia, la máquina imprime aproximadamente 1 m² por hora y el montaje requiere alrededor de una hora: un mural de 20 m² suele necesitar 2–3 jornadas. Te damos el plazo exacto en el presupuesto y, si hace falta, trabajamos por zonas o fuera del horario de tu negocio."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Sobre qué superficies funciona la impresión mural?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Prácticamente todas: yeso, pintura plástica, madera, piedra, ladrillo, clínker, metal, vidrio, cerámica y azulejos, también enfoscados rugosos. Los sensores de la máquina adaptan el cabezal a las irregularidades de la pared. Antes de cada proyecto hacemos una prueba sobre la superficie."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Fins a quina alçada podeu imprimir en una paret?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Altura mínima de la pared: 1,7 m. Altura máxima de impresión: 4 metros (con la extensión de eje vertical). La anchura no tiene límite. Márgenes técnicos: 6 cm a la izquierda, 10 cm a la derecha y 25 cm arriba y abajo."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Cuánto dura la impresión mural y se puede borrar?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Las tintas UV son resistentes a la luz, la humedad y el roce, y los trabajos en interior tienen garantía escrita de 5 años. Para eliminarla: en vidrio, con una rasqueta; en otras superficies, con 2–3 capas de pintura."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Qué garantía ofrecéis para la impresión mural?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Todos los trabajos en interior incluyen una garantía escrita de 5 años, con las condiciones detalladas en el presupuesto. Si la impresión se deteriora prematuramente en condiciones normales de uso, lo resolvemos sin coste adicional."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Vais a imprimir a cualquier lugar de España?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Trabajamos principalmente en Barcelona y Cataluña, y también hacemos proyectos en el resto de España y en Andorra. El desplazamiento es gratuito hasta 30 km de Barcelona; para distancias mayores, el importe consta en el presupuesto. Sin costes ocultos."
+          }
+        }
       ]
     },
     {
@@ -131,8 +236,22 @@
       "url": "https://octaprint.cat",
       "logo": "https://octaprint.cat/og-image.jpg",
       "description": "Octaprint es operador de servicio de impresión mural directa y partner oficial de wallPen GmbH (tecnología wallPen E2, Made in Germany).",
-      "knowsAbout": ["Impresión mural directa", "wallPen E2", "Decoración comercial", "Impresión digital gran formato", "Tintas UV veganas"],
-      "founder": {"@type": "Person", "name": "Octavi Martí Busquet", "jobTitle": "Fundador y Director de Octaprint SLU"}
+      "knowsAbout": [
+        "Impresión mural directa",
+        "wallPen E2",
+        "Decoración comercial",
+        "Impresión digital gran formato",
+        "Tintas UV veganas"
+      ],
+      "founder": {
+        "@type": "Person",
+        "name": "Octavi Martí Busquet",
+        "jobTitle": "Fundador y Director de Octaprint SLU"
+      },
+      "sameAs": [
+        "https://www.instagram.com/octaprint.cat",
+        "https://www.linkedin.com/company/octaprint"
+      ]
     }
   ]
 }
@@ -617,7 +736,7 @@ h1.hh{font-size:clamp(46px,7.4vw,104px)}
     <div class="pioneer-badge" id="pbadge">✦ Partner oficial wallPen</div>
     <p class="h-eyebrow" id="h-eye">Made in Germany · Partner oficial wallPen</p>
     <h1 class="hh" id="hh">Impresión de murales<br><em>en paredes en Barcelona.</em></h1>
-    <p class="h-sub" id="hsub">Imprimimos tu diseño directamente sobre yeso, ladrillo, madera, piedra, cerámica y superficies curvas, sin vinilos ni adhesivos.<br><strong>Sin obras. Sin cerrar el local. Garantía escrita de 5 años.</strong></p>
+    <p class="h-sub" id="hsub">En Octaprint imprimimos tu diseño directamente sobre yeso, ladrillo, madera, piedra, cerámica y superficies curvas, sin vinilos ni adhesivos.<br><strong>Sin obras. Sin cerrar el local. Garantía escrita de 5 años.</strong></p>
     <div class="h-btns">
       <a href="https://wa.me/34622655514?text=%C2%A1Hola%20Octaprint%21%20Quiero%20un%20render%20gratuito%20para%20mi%20pared.%20Os%20env%C3%ADo%20una%20foto." class="wa-btn i" target="_blank" rel="noopener noreferrer" id="hb1"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>Envía una foto por WhatsApp</a>
       <a href="#galeria" class="bg i" id="hb2">Ver ejemplos</a>
