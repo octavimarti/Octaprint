@@ -3,8 +3,7 @@
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://octaprint.cat/</loc>
-    <lastmod>2026-10-13</lastmod>
-    <priority>1.0</priority>
+    <lastmod>2026-10-28</lastmod>
     <xhtml:link rel="alternate" hreflang="ca" href="https://octaprint.cat/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://octaprint.cat/es/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://octaprint.cat/en/"/>
@@ -12,8 +11,7 @@
   </url>
   <url>
     <loc>https://octaprint.cat/es/</loc>
-    <lastmod>2026-10-13</lastmod>
-    <priority>0.9</priority>
+    <lastmod>2026-10-28</lastmod>
     <xhtml:link rel="alternate" hreflang="ca" href="https://octaprint.cat/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://octaprint.cat/es/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://octaprint.cat/en/"/>
@@ -21,38 +19,166 @@
   </url>
   <url>
     <loc>https://octaprint.cat/en/</loc>
-    <lastmod>2026-10-13</lastmod>
-    <priority>0.9</priority>
+    <lastmod>2026-10-28</lastmod>
     <xhtml:link rel="alternate" hreflang="ca" href="https://octaprint.cat/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://octaprint.cat/es/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://octaprint.cat/en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://octaprint.cat/"/>
   </url>
   <url>
+    <loc>https://octaprint.cat/murals-empreses-oficines-barcelona/</loc>
+    <lastmod>2026-10-28</lastmod>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://octaprint.cat/murals-empreses-oficines-barcelona/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://octaprint.cat/es/murales-empresas-oficinas-barcelona/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://octaprint.cat/en/office-wall-murals-barcelona/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://octaprint.cat/murals-empreses-oficines-barcelona/"/>
+  </url>
+  <url>
+    <loc>https://octaprint.cat/es/murales-empresas-oficinas-barcelona/</loc>
+    <lastmod>2026-10-28</lastmod>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://octaprint.cat/murals-empreses-oficines-barcelona/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://octaprint.cat/es/murales-empresas-oficinas-barcelona/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://octaprint.cat/en/office-wall-murals-barcelona/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://octaprint.cat/murals-empreses-oficines-barcelona/"/>
+  </url>
+  <url>
+    <loc>https://octaprint.cat/en/office-wall-murals-barcelona/</loc>
+    <lastmod>2026-10-28</lastmod>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://octaprint.cat/murals-empreses-oficines-barcelona/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://octaprint.cat/es/murales-empresas-oficinas-barcelona/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://octaprint.cat/en/office-wall-murals-barcelona/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://octaprint.cat/murals-empreses-oficines-barcelona/"/>
+  </url>
+  <url>
+    <loc>https://octaprint.cat/murals-restaurants-hotels-comercos-barcelona/</loc>
+    <lastmod>2026-10-28</lastmod>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://octaprint.cat/murals-restaurants-hotels-comercos-barcelona/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://octaprint.cat/es/murales-restaurantes-hoteles-comercios-barcelona/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://octaprint.cat/en/restaurant-hotel-shop-wall-murals-barcelona/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://octaprint.cat/murals-restaurants-hotels-comercos-barcelona/"/>
+  </url>
+  <url>
+    <loc>https://octaprint.cat/es/murales-restaurantes-hoteles-comercios-barcelona/</loc>
+    <lastmod>2026-10-28</lastmod>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://octaprint.cat/murals-restaurants-hotels-comercos-barcelona/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://octaprint.cat/es/murales-restaurantes-hoteles-comercios-barcelona/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://octaprint.cat/en/restaurant-hotel-shop-wall-murals-barcelona/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://octaprint.cat/murals-restaurants-hotels-comercos-barcelona/"/>
+  </url>
+  <url>
+    <loc>https://octaprint.cat/en/restaurant-hotel-shop-wall-murals-barcelona/</loc>
+    <lastmod>2026-10-28</lastmod>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://octaprint.cat/murals-restaurants-hotels-comercos-barcelona/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://octaprint.cat/es/murales-restaurantes-hoteles-comercios-barcelona/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://octaprint.cat/en/restaurant-hotel-shop-wall-murals-barcelona/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://octaprint.cat/murals-restaurants-hotels-comercos-barcelona/"/>
+  </url>
+  <url>
+    <loc>https://octaprint.cat/murals-infantils-barcelona/</loc>
+    <lastmod>2026-10-28</lastmod>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://octaprint.cat/murals-infantils-barcelona/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://octaprint.cat/es/murales-infantiles-barcelona/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://octaprint.cat/en/kids-wall-murals-barcelona/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://octaprint.cat/murals-infantils-barcelona/"/>
+  </url>
+  <url>
+    <loc>https://octaprint.cat/es/murales-infantiles-barcelona/</loc>
+    <lastmod>2026-10-28</lastmod>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://octaprint.cat/murals-infantils-barcelona/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://octaprint.cat/es/murales-infantiles-barcelona/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://octaprint.cat/en/kids-wall-murals-barcelona/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://octaprint.cat/murals-infantils-barcelona/"/>
+  </url>
+  <url>
+    <loc>https://octaprint.cat/en/kids-wall-murals-barcelona/</loc>
+    <lastmod>2026-10-28</lastmod>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://octaprint.cat/murals-infantils-barcelona/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://octaprint.cat/es/murales-infantiles-barcelona/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://octaprint.cat/en/kids-wall-murals-barcelona/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://octaprint.cat/murals-infantils-barcelona/"/>
+  </url>
+  <url>
+    <loc>https://octaprint.cat/murals-interiorisme/</loc>
+    <lastmod>2026-10-28</lastmod>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://octaprint.cat/murals-interiorisme/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://octaprint.cat/es/murales-interiorismo/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://octaprint.cat/en/interior-design-wall-murals/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://octaprint.cat/murals-interiorisme/"/>
+  </url>
+  <url>
+    <loc>https://octaprint.cat/es/murales-interiorismo/</loc>
+    <lastmod>2026-10-28</lastmod>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://octaprint.cat/murals-interiorisme/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://octaprint.cat/es/murales-interiorismo/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://octaprint.cat/en/interior-design-wall-murals/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://octaprint.cat/murals-interiorisme/"/>
+  </url>
+  <url>
+    <loc>https://octaprint.cat/en/interior-design-wall-murals/</loc>
+    <lastmod>2026-10-28</lastmod>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://octaprint.cat/murals-interiorisme/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://octaprint.cat/es/murales-interiorismo/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://octaprint.cat/en/interior-design-wall-murals/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://octaprint.cat/murals-interiorisme/"/>
+  </url>
+  <url>
+    <loc>https://octaprint.cat/superficies/</loc>
+    <lastmod>2026-10-28</lastmod>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://octaprint.cat/superficies/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://octaprint.cat/es/superficies/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://octaprint.cat/en/surfaces/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://octaprint.cat/superficies/"/>
+  </url>
+  <url>
+    <loc>https://octaprint.cat/es/superficies/</loc>
+    <lastmod>2026-10-28</lastmod>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://octaprint.cat/superficies/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://octaprint.cat/es/superficies/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://octaprint.cat/en/surfaces/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://octaprint.cat/superficies/"/>
+  </url>
+  <url>
+    <loc>https://octaprint.cat/en/surfaces/</loc>
+    <lastmod>2026-10-28</lastmod>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://octaprint.cat/superficies/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://octaprint.cat/es/superficies/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://octaprint.cat/en/surfaces/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://octaprint.cat/superficies/"/>
+  </url>
+  <url>
+    <loc>https://octaprint.cat/impressora-murals-wallpen/</loc>
+    <lastmod>2026-10-28</lastmod>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://octaprint.cat/impressora-murals-wallpen/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://octaprint.cat/es/impresora-murales-wallpen/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://octaprint.cat/en/wallpen-wall-printer/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://octaprint.cat/impressora-murals-wallpen/"/>
+  </url>
+  <url>
+    <loc>https://octaprint.cat/es/impresora-murales-wallpen/</loc>
+    <lastmod>2026-10-28</lastmod>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://octaprint.cat/impressora-murals-wallpen/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://octaprint.cat/es/impresora-murales-wallpen/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://octaprint.cat/en/wallpen-wall-printer/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://octaprint.cat/impressora-murals-wallpen/"/>
+  </url>
+  <url>
+    <loc>https://octaprint.cat/en/wallpen-wall-printer/</loc>
+    <lastmod>2026-10-28</lastmod>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://octaprint.cat/impressora-murals-wallpen/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://octaprint.cat/es/impresora-murales-wallpen/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://octaprint.cat/en/wallpen-wall-printer/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://octaprint.cat/impressora-murals-wallpen/"/>
+  </url>
+  <url>
     <loc>https://octaprint.cat/legal.html</loc>
     <lastmod>2026-10-13</lastmod>
-    <priority>0.3</priority>
-    <xhtml:link rel="alternate" hreflang="ca" href="https://octaprint.cat/legal.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://octaprint.cat/legal-es.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://octaprint.cat/legal-en.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://octaprint.cat/legal.html"/>
   </url>
   <url>
     <loc>https://octaprint.cat/legal-es.html</loc>
     <lastmod>2026-10-13</lastmod>
-    <priority>0.3</priority>
-    <xhtml:link rel="alternate" hreflang="ca" href="https://octaprint.cat/legal.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://octaprint.cat/legal-es.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://octaprint.cat/legal-en.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://octaprint.cat/legal.html"/>
   </url>
   <url>
     <loc>https://octaprint.cat/legal-en.html</loc>
     <lastmod>2026-10-13</lastmod>
-    <priority>0.3</priority>
-    <xhtml:link rel="alternate" hreflang="ca" href="https://octaprint.cat/legal.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://octaprint.cat/legal-es.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://octaprint.cat/legal-en.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://octaprint.cat/legal.html"/>
   </url>
 </urlset>
