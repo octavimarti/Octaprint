@@ -383,3 +383,11 @@ h3{letter-spacing:-.01em}
 }
 @media(max-width:380px){.topbar b{font-size:12px}}
 .h8{min-height:calc(100svh - 110px)}
+
+.seo8{border-top:1px solid var(--line)}
+.seo8-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px 56px;margin-top:24px}
+.seo8 article h2{font-size:clamp(22px,2.2vw,28px);margin-bottom:10px}
+.seo8 article h3{font-size:19px;margin:22px 0 6px;color:var(--brand)}
+.seo8 article p{color:var(--ink);font-size:17px;line-height:1.7;max-width:62ch}
+@media(max-width:960px){.seo8-grid{grid-template-columns:1fr;gap:32px}}
+section[id]{scroll-margin-top:112px}@media(max-width:960px){section[id]{scroll-margin-top:110px}}
