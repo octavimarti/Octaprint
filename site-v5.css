@@ -364,3 +364,22 @@ h3{letter-spacing:-.01em}
   .top{background:#fff;backdrop-filter:none;border-bottom:2px solid #0D1B2A}
   .btn-line,.btn-ghost{border-width:2px}
 }
+
+/* barra superior: telèfon i correu sempre visibles */
+.top{flex-direction:column}
+.top .wrap{height:auto}
+.top>.wrap{height:72px}
+.topbar{background:#0D1B2A;color:#fff;font-size:14px}
+.topbar .wrap{display:flex;justify-content:flex-end;align-items:center;gap:26px;height:38px}
+.topbar a{display:inline-flex;align-items:center;gap:8px;color:#fff;text-decoration:none;white-space:nowrap}
+.topbar a:hover b{color:var(--cyan)}
+.topbar svg{width:16px;height:16px;fill:var(--cyan);flex:0 0 auto}
+.topbar span{color:rgba(255,255,255,.7)}
+.topbar b{font-weight:600}
+@media(max-width:960px){
+  .topbar .wrap{justify-content:space-between;gap:10px;font-size:13px;height:36px}
+  .topbar span{display:none}
+  .menu{top:108px}
+}
+@media(max-width:380px){.topbar b{font-size:12px}}
+.h8{min-height:calc(100svh - 110px)}
