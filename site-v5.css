@@ -329,3 +329,38 @@ h2.c,.c{text-align:center;margin-left:auto;margin-right:auto}
 .proof-l{display:flex;flex-direction:column;gap:18px;align-items:flex-start}.proof-l svg{width:260px;height:auto}
 @media(max-width:1100px){.opts{grid-template-columns:repeat(3,1fr)}}
 @media(max-width:700px){.opts{grid-template-columns:1fr 1fr}.opt.win{grid-column:1/-1}}
+
+/* ── Polish (apple-design + emil-design-eng) ── */
+:root{--ease-out:cubic-bezier(.23,1,.32,1);--ease-in-out:cubic-bezier(.77,0,.175,1)}
+body{-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+h1{letter-spacing:-.028em;line-height:1.04}
+h2{letter-spacing:-.02em;line-height:1.12}
+h3{letter-spacing:-.01em}
+.lead,.h8-sub,.me .big{letter-spacing:0;line-height:1.6}
+/* capçalera translúcida amb vora suau */
+.top{background:rgba(255,255,255,.72);-webkit-backdrop-filter:saturate(180%) blur(20px);backdrop-filter:saturate(180%) blur(20px);border-bottom:1px solid rgba(13,27,42,.08)}
+/* resposta immediata en prémer */
+.btn-wa,.btn-line,.btn-ghost,.burger,.vpause,.card,.sector,.opt{transition:transform 160ms var(--ease-out),background-color 200ms ease,border-color 200ms ease,box-shadow 200ms var(--ease-out)}
+.btn-wa:active,.btn-line:active,.btn-ghost:active,.burger:active,.vpause:active{transform:scale(.97)}
+.card:active,.sector:active{transform:scale(.985)}
+/* hover només en dispositius amb ratolí */
+.card:hover{transform:none;box-shadow:none}
+.card:hover .ci img{transform:none}
+@media (hover:hover) and (pointer:fine){
+  .card:hover{transform:translateY(-3px);box-shadow:0 22px 40px -24px rgba(13,27,42,.45)}
+  .card:hover .ci img{transform:scale(1.04)}
+  .btn-wa:hover{transform:translateY(-1px)}
+}
+.ci img{transition:transform 500ms var(--ease-out)}
+.burger span{transition:transform 200ms var(--ease-out),opacity 150ms ease}
+.faq summary::after{transition:transform 200ms var(--ease-out)}
+/* accessibilitat */
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{transition-duration:.01ms!important;animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important}
+}
+@media (prefers-reduced-transparency:reduce){.top{background:#fff;-webkit-backdrop-filter:none;backdrop-filter:none}.h8-cap,.ci i{background:#0D1B2A}}
+@media (prefers-contrast:more){
+  :root{--line:#8593a5;--muted:#2B3A4C}
+  .top{background:#fff;backdrop-filter:none;border-bottom:2px solid #0D1B2A}
+  .btn-line,.btn-ghost{border-width:2px}
+}

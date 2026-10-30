@@ -1,6 +1,6 @@
 # robots.txt — octaprint.cat
 # Permet rastreig complet a cercadors clàssics i a motors d'IA generativa
-# Revisat: 7 de setembre de 2026 — revisar cada 6 mesos, els bots d'IA canvien de nom sovint
+# Revisat: 29 d'octubre de 2026 — revisar cada 6 mesos, els bots d'IA canvien de nom sovint
 
 # --- Cercadors tradicionals ---
 User-agent: Googlebot
@@ -75,7 +75,11 @@ User-agent: Bytespider
 Disallow: /
 
 # --- Regla general per a la resta ---
+# Content Signals (contentsignals.org): preferències d'ús del contingut per IA
+# search=yes: apareixer als cercadors · ai-input=yes: que les IA ens puguin citar a les respostes
+# ai-train=yes: coherent amb els permisos d'entrenament d'aquest fitxer (GPTBot, ClaudeBot, CCBot...)
 User-agent: *
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
 Allow: /
 
 # Sitemap
