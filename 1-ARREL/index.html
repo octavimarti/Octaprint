@@ -221,96 +221,180 @@
 <link rel="alternate" hreflang="en" href="https://octaprint.cat/en/">
 <link rel="alternate" hreflang="x-default" href="https://octaprint.cat/">
 
-<meta name="theme-color" content="#0D1B2A">
-
-<!-- ── SCHEMA.ORG STRUCTURED DATA (JSON-LD) ── -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "LocalBusiness",
-      "@id": "https://octaprint.cat/#business",
+      "@type": ["LocalBusiness", "ProfessionalService"],
+      "@id": "https://octaprint.cat/#organization",
       "name": "Octaprint",
-      "legalName": "Octaprint Barcelona, SL",
-      "taxID": "B93843498",
-      "alternateName": ["Octaprint", "Octaprint Barcelona", "Octaprint Impressió Mural"],
-      "description": "Servei d'impressió mural robòtica a Barcelona i Catalunya. Partner oficial de wallPen GmbH (tecnologia wallPen E2, Made in Germany). Imprimim qualsevol imatge directament sobre la paret, sense obra i sense adhesius.",
+      "legalName": "Octaprint Barcelona, S.L.",
+      "alternateName": ["Octaprint Barcelona", "Octaprint Impressió Mural"],
+      "vatID": "ESB93843498",
       "url": "https://octaprint.cat",
       "telephone": "+34622655514",
       "email": "info@octaprint.cat",
       "foundingDate": "2026",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://octaprint.cat/og-image.jpg"
+      },
+      "image": "https://octaprint.cat/og-image.jpg",
+      "description": "Servei d'impressió mural robòtica d'alta resolució a Barcelona i Catalunya. Partner oficial de wallPen GmbH (tecnologia wallPen E2, Made in Germany). Imprimim directament sobre la paret sense obra ni adhesius.",
+      "priceRange": "€€",
+      "currenciesAccepted": "EUR",
+      "paymentAccepted": "Transferència bancària, Targeta",
+      "openingHours": "Mo-Fr 08:00-19:00",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "C/ Engranell 4",
         "addressLocality": "La Llacuna",
-        "addressRegion": "Catalunya",
+        "addressRegion": "Barcelona",
         "postalCode": "08779",
         "addressCountry": "ES"
       },
-      "areaServed": [
-        {"@type": "Country", "name": "España"},
-        {"@type": "Country", "name": "Andorra"}
-      ],
-      "serviceArea": {
-        "@type": "GeoCircle",
-        "geoMidpoint": {"@type": "GeoCoordinates", "latitude": 41.3851, "longitude": 2.1734},
-        "geoRadius": "500000"
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 41.4725,
+        "longitude": 1.5342
       },
+      "areaServed": [
+        {
+          "@type": "AdministrativeArea",
+          "name": "Catalunya"
+        },
+        {
+          "@type": "Country",
+          "name": "España"
+        },
+        {
+          "@type": "Country",
+          "name": "Andorra"
+        }
+      ],
       "sameAs": [
         "https://www.instagram.com/octaprint.cat",
         "https://www.wallpen.com"
       ],
-      "logo": {"@type": "ImageObject", "url": "https://octaprint.cat/og-image.jpg"},
-      "image": "https://octaprint.cat/og-image.jpg",
-      "priceRange": "€€",
-      "currenciesAccepted": "EUR",
-      "paymentAccepted": "Transferencia bancaria, Tarjeta",
-      "openingHours": "Mo-Fr 08:00-19:00",
+      "founder": {
+        "@type": "Person",
+        "name": "Octavi Martí Busquet",
+        "jobTitle": "Fundador i Director"
+      },
+      "knowsAbout": [
+        "Impressió mural robòtica",
+        "wallPen E2",
+        "Decoració comercial",
+        "Impressió digital gran format",
+        "Tintes UV veganes"
+      ],
       "hasOfferCatalog": {
         "@type": "OfferCatalog",
         "name": "Serveis d'impressió mural robòtica",
         "itemListElement": [
-          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Pack Restaurant", "description": "Impressió mural robòtica per a restaurants i bars. 20m². Render 3D gratuït. Execució in situ.", "priceCurrency": "EUR"}},
-          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Pack Retail", "description": "Impressió mural robòtica per a comerços i botigues. 30m².", "priceCurrency": "EUR"}},
-          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Pack Oficina", "description": "Impressió mural robòtica per a oficines i espais corporatius. 40m².", "priceCurrency": "EUR"}},
-          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Pack Hotel", "description": "Impressió mural robòtica per a hotels. 50m². Tintes UV veganes.", "priceCurrency": "EUR"}}
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Pack Restaurant",
+              "description": "Impressió mural robòtica per a restaurants i bars. 20m². Render 3D gratuït. Execució in situ.",
+              "priceCurrency": "EUR"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Pack Retail",
+              "description": "Impressió mural robòtica per a comerços i botigues. 30m².",
+              "priceCurrency": "EUR"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Pack Oficina",
+              "description": "Impressió mural robòtica per a oficines i espais corporatius. 40m².",
+              "priceCurrency": "EUR"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Pack Hotel",
+              "description": "Impressió mural robòtica per a hotels. 50m². Tintes UV veganes.",
+              "priceCurrency": "EUR"
+            }
+          }
         ]
       }
     },
     {
-      "@type": "Service",
-      "@id": "https://octaprint.cat/#service",
-      "name": "Impressió Mural Robòtica Professional",
-      "provider": {"@id": "https://octaprint.cat/#business"},
-      "serviceType": "Wall printing service",
-      "description": "Servei d'impressió mural robòtica d'alta resolució (600 DPI) sobre qualsevol superfície (paret, fusta, vidre, pedra, metall). Sense obra. Sense adhesius. Tintes UV veganes. Garantia escrita de 5 anys en interior.",
-      "areaServed": "España, Andorra",
-      "offers": {"@type": "Offer"}
+      "@type": "Product",
+      "@id": "https://octaprint.cat/#product-wallpen",
+      "name": "Impressió Robòtica Vertical wallPen E2",
+      "brand": {
+        "@type": "Brand",
+        "name": "wallPen"
+      },
+      "description": "Impressió mural directa sobre fusta, vidre, formigó, maó i plàstic amb tintes UV d'alta durabilitat i resolució de 1440 dpi."
     },
     {
       "@type": "FAQPage",
       "@id": "https://octaprint.cat/#faq",
       "mainEntity": [
-        {"@type": "Question", "name": "Quant de temps triga una impressió mural robòtica?", "acceptedAnswer": {"@type": "Answer", "text": "Depèn dels metres quadrats, la resolució i el tipus de superfície. Com a referència, la màquina imprimeix aproximadament 1 m² per hora i el muntatge requereix al voltant d'una hora: un mural de 20 m² sol necessitar 2–3 jornades. Et donem el termini exacte al pressupost i, si cal, treballem per zones o fora de l'horari del teu negoci."}},
-        {"@type": "Question", "name": "Sobre quines superfícies funciona la impressió mural?", "acceptedAnswer": {"@type": "Answer", "text": "Pràcticament totes: guix, pintura plàstica, fusta, pedra, maó, clínker, metall, vidre, ceràmica i rajoles, també arrebossats rugosos. Els sensors de la màquina adapten el capçal a les irregularitats de la paret. Abans de cada projecte en fem una prova sobre la superfície."}},
-        {"@type": "Question", "name": "Fins a quina alçada podeu imprimir en una paret?", "acceptedAnswer": {"@type": "Answer", "text": "Alçada mínima de la paret: 1,7 m. Alçada màxima d'impressió: 4 metres (amb l'extensió d'eix vertical). L'amplada no té límit. Marges tècnics: 6 cm a l'esquerra, 10 cm a la dreta i 25 cm a dalt i a baix."}},
-        {"@type": "Question", "name": "Quant dura la impressió mural i es pot esborrar?", "acceptedAnswer": {"@type": "Answer", "text": "Les tintes UV són resistents a la llum, la humitat i el fregament, i els treballs en interior tenen garantia escrita de 5 anys. Per eliminar-la: en vidre, amb una rasqueta; en altres superfícies, amb 2–3 capes de pintura."}},
-        {"@type": "Question", "name": "Quina garantia oferiu per a la impressió mural?", "acceptedAnswer": {"@type": "Answer", "text": "Tots els treballs en interior inclouen una garantia escrita de 5 anys, amb les condicions detallades al pressupost. Si la impressió es deteriora prematurament en condicions normals d'ús, ho resolem sense cost addicional."}},
-        {"@type": "Question", "name": "Veniu a imprimir a qualsevol lloc d'Espanya?", "acceptedAnswer": {"@type": "Answer", "text": "Treballem principalment a Barcelona i Catalunya, i també fem projectes a la resta d'Espanya i a Andorra. El desplaçament és gratuït fins a 30 km de Barcelona; per a distàncies superiors, l'import consta al pressupost. Sense costos ocults."}}
+        {
+          "@type": "Question",
+          "name": "Quant de temps triga una impressió mural robòtica?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Depèn dels metres quadrats, la resolució i el tipus de superfície. Com a referència, la màquina imprimeix aproximadament 1 m² per hora i el muntatge requereix al voltant d'una hora: un mural de 20 m² sol necessitar 2–3 jornades. Et donem el termini exacte al pressupost i, si cal, treballem per zones o fora de l'horari del teu negoci."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Quina garantia oferiu per a la impressió mural?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Tots els treballs en interior inclouen una garantia escrita de 5 anys, amb les condicions detallades al pressupost. Si la impressió es deteriora prematurament en condicions normals d'ús, ho resolem sense cost addicional."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Sobre quines superfícies funciona la impressió mural?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Pràcticament totes: guix, pintura plàstica, fusta, pedra, maó, clínker, metall, vidre, ceràmica i rajoles, també arrebossats rugosos. Els sensors de la màquina adapten el capçal a les irregularitats de la paret."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Fins a quina alçada podeu imprimir en una paret?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Alçada mínima de la paret: 1,7 m. Alçada màxima d'impressió: 4 metres (amb l'extensió d'eix vertical). L'amplada no té límit."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Quant dura la impressió mural i es pot esborrar?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Les tintes UV són resistents a la llum, la humitat i el fregament, amb garantia de 5 anys en interior. Per eliminar-la: en vidre, amb una rasqueta; en altres superfícies, amb 2–3 capes de pintura."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Veniu a imprimir a qualsevol lloc d'Espanya?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Treballem principalment a Barcelona i Catalunya, i també fem projectes a la resta d'Espanya i a Andorra. El desplaçament és gratuït fins a 30 km de Barcelona."
+          }
+        }
       ]
-    },
-    {
-      "@type": "Organization",
-      "@id": "https://octaprint.cat/#org",
-      "name": "Octaprint",
-      "legalName": "Octaprint Barcelona, SL",
-      "taxID": "B93843498",
-      "url": "https://octaprint.cat",
-      "logo": "https://octaprint.cat/og-image.jpg",
-      "description": "Octaprint és operador de servei d'impressió mural robòtica i partner oficial de wallPen GmbH (tecnologia wallPen E2, Made in Germany).",
-      "knowsAbout": ["Impressió mural robòtica", "wallPen E2", "Decoració commercial", "Impressió digital gran format", "Tintes UV veganes"],
-      "founder": {"@type": "Person", "name": "Octavi Martí Busquet", "jobTitle": "Fundador i Director d'Octaprint SLU"}
     }
   ]
 }
