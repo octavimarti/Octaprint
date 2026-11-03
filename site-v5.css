@@ -146,7 +146,7 @@ footer a{color:var(--muted);text-decoration:none;display:block;padding:3px 0}foo
 .photo{border:0;padding:0;background:none;overflow:hidden}
 .photo img{width:100%;height:100%;object-fit:cover;border-radius:var(--r)}
 .founder p.txt{font-size:clamp(18px,1.7vw,20px);color:var(--ink);line-height:1.65;margin:0 0 14px;max-width:62ch}
-.credits{font-size:13px;margin-top:18px;color:#8593a5}
+.credits{font-size:13px;margin-top:18px;color:#64748B}
 @media(max-width:960px){
  .facts .wrap{grid-template-columns:1fr 1fr}
  .vids,.vids-2,.bcn .wrap{grid-template-columns:1fr}
@@ -273,7 +273,7 @@ footer a{color:var(--muted);text-decoration:none;display:block;padding:3px 0}foo
 .proof h2{font-size:clamp(24px,2.6vw,32px);margin-bottom:20px}
 .proof ul{list-style:none;display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
 .proof li b{display:block;font-size:19px;color:var(--brand);font-weight:600}.proof li span{font-size:15px;color:var(--muted)}
-.proof .src{font-size:13px;color:#8593a5;margin-top:14px}
+.proof .src{font-size:13px;color:#64748B;margin-top:14px}
 h2.c,.c{text-align:center;margin-left:auto;margin-right:auto}
 .ctas.c{justify-content:center;margin-top:36px}
 .s8{list-style:none;display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-top:40px;counter-reset:none}
@@ -360,7 +360,7 @@ h3{letter-spacing:-.01em}
 }
 @media (prefers-reduced-transparency:reduce){.top{background:#fff;-webkit-backdrop-filter:none;backdrop-filter:none}.h8-cap,.ci i{background:#0D1B2A}}
 @media (prefers-contrast:more){
-  :root{--line:#8593a5;--muted:#2B3A4C}
+  :root{--line:#64748B;--muted:#2B3A4C}
   .top{background:#fff;backdrop-filter:none;border-bottom:2px solid #0D1B2A}
   .btn-line,.btn-ghost{border-width:2px}
 }
@@ -391,3 +391,9 @@ h3{letter-spacing:-.01em}
 .seo8 article p{color:var(--ink);font-size:17px;line-height:1.7;max-width:62ch}
 @media(max-width:960px){.seo8-grid{grid-template-columns:1fr;gap:32px}}
 section[id]{scroll-margin-top:112px}@media(max-width:960px){section[id]{scroll-margin-top:110px}}
+
+/* contrast AA (4.5:1) i accés amb teclat */
+:root{--wa:#14843F}
+.btn-wa:hover{background:#106E34}
+.skip{position:absolute;left:12px;top:-60px;z-index:100;background:#0D1B2A;color:#fff;padding:10px 16px;border-radius:8px;text-decoration:none;font-weight:600}
+.skip:focus{top:12px}
