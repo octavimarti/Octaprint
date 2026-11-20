@@ -11,6 +11,7 @@
 - [Superfícies imprimibles (guix, maó, fusta, pedra, formigó, ceràmica, metall, vidre)](https://octaprint.cat/superficies.html)
 - [Impressora vertical wallPen E2 per a professionals](https://octaprint.cat/impressora-murals-wallpen.html)
 - [Preus: de què depèn el preu d'un mural](https://octaprint.cat/preu-murals-paret.html)
+- [Formació oficial a la fàbrica de wallPen (Wissen, novembre de 2026)](https://octaprint.cat/formacio-wallpen-wissen.html)
 
 ## Dades clau
 - Alçada màxima d'impressió: 4 m; amplada il·limitada; alçada mínima de paret: 1,7 m.
