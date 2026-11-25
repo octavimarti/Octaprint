@@ -497,3 +497,20 @@ footer .fpartner span{display:inline-flex;align-items:center;gap:6px;font-size:1
 button.btn-wa{font-family:inherit;border:0;cursor:pointer}
 .hero.lp h1{font-size:clamp(32px,4.4vw,48px)}
 @media(max-width:960px){.specs{grid-template-columns:1fr 1fr;gap:12px}.specs p{padding:16px;font-size:15px}.specs strong{font-size:21px}}
+
+/* treball propi: vídeo + abans/després (v18) */
+.own8 .lead{margin:14px auto 34px}
+.own-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr) minmax(0,1.7fr);gap:24px;align-items:start;max-width:1180px;margin:0 auto}
+.own-grid .own-v{max-width:300px;width:100%}
+.ba{background:var(--paper);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;margin:0}
+.ba-pair{display:grid;grid-template-columns:1fr 1fr;gap:4px;background:var(--line)}
+.ba-pair figure{position:relative;margin:0;background:#0D1B2A}
+.ba-pair img{display:block;width:100%;height:auto;aspect-ratio:3/4;object-fit:cover}
+.ba-pair figcaption{position:absolute;left:10px;top:10px;background:rgba(13,27,42,.82);color:#fff;font-size:13px;font-weight:600;padding:4px 10px;border-radius:999px}
+.ba>figcaption{padding:14px 18px 16px}
+.ba>figcaption b{display:block;font-weight:500;font-size:17px;color:var(--ink)}
+.ba>figcaption span{font-size:14px;color:var(--muted)}
+.own8 .ctas{margin-top:26px}
+.own8 .src{font-size:13px;color:#64748B;margin:18px auto 0;max-width:70ch}
+@media(max-width:1000px){.own-grid{grid-template-columns:1fr 1fr}.own-grid .ba{grid-column:1/-1}.own-grid .own-v{max-width:none}}
+@media(max-width:600px){.own-grid{grid-template-columns:1fr}.own-grid .own-v{max-width:340px;margin:0 auto}}

@@ -105,3 +105,14 @@ m.addEventListener('click',function(e){if(e.target.tagName==='A'){m.classList.re
     else{var u='https://wa.me/34622655514?text='+encodeURIComponent(txt),w=window.open(u,'_blank');if(w){try{w.opener=null;}catch(x){}}else location.href='https://wa.me/34622655514?text='+encodeURIComponent(txt);}
   });
 })();
+
+/* vídeos propis: només es reprodueixen quan es veuen (v18) */
+(function(){
+  var vs=document.querySelectorAll('video[data-inview]');if(!vs.length)return;
+  var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  vs.forEach(function(v){v.removeAttribute('autoplay');v.muted=true;if(reduce){v.setAttribute('controls','');}});
+  if(reduce||!('IntersectionObserver' in window))return;
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){var v=e.target;
+    if(e.isIntersecting){if(v.preload!=='auto')v.preload='auto';var p=v.play();if(p&&p.catch)p.catch(function(){});}else{v.pause();}});},{threshold:0.35});
+  vs.forEach(function(v){io.observe(v)});
+})();
