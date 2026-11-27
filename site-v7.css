@@ -514,3 +514,25 @@ button.btn-wa{font-family:inherit;border:0;cursor:pointer}
 .own8 .src{font-size:13px;color:#64748B;margin:18px auto 0;max-width:70ch}
 @media(max-width:1000px){.own-grid{grid-template-columns:1fr 1fr}.own-grid .ba{grid-column:1/-1}.own-grid .own-v{max-width:none}}
 @media(max-width:600px){.own-grid{grid-template-columns:1fr}.own-grid .own-v{max-width:340px;margin:0 auto}}
+
+/* v19: tres vídeos propis + bloc de tinta */
+.own-grid{grid-template-columns:repeat(3,minmax(0,1fr));max-width:1080px}
+.own-grid .own-v{max-width:none}
+.own-grid .ba{grid-column:1/-1;max-width:760px;width:100%;justify-self:center}
+.own-hint{display:none}
+@media(max-width:1000px){.own-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:700px){
+ .own-hint{display:block;text-align:right;font-size:14px;color:#64748B;margin:0 4px 10px}
+ .own-grid{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:14px;padding:0 4px 12px;-webkit-overflow-scrolling:touch}
+ .own-grid>figure{flex:0 0 80%;scroll-snap-align:center;margin:0}
+ .own-grid .own-v{max-width:none}
+ .own-grid .ba{flex-basis:88%}
+}
+.ink8 .lead{margin:14px auto 30px;max-width:62ch}
+.ink-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px;max-width:1080px;margin:0 auto}
+.ink-card{background:var(--paper);border:1px solid var(--line);border-top:3px solid #00C8FF;border-radius:var(--r);padding:20px 18px}
+.ink-card b{display:block;font-weight:600;color:var(--ink);font-size:17px;margin-bottom:6px}
+.ink-card span{font-size:15px;color:var(--muted);line-height:1.5}
+.ink8 .src{font-size:13px;color:#64748B;margin-top:16px}
+@media(max-width:900px){.ink-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){.ink-grid{grid-template-columns:1fr}}
